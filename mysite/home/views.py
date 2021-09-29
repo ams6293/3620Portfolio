@@ -16,10 +16,13 @@ def contact(request):
 
 
 def hobbies(request):
+
+    
     hobby_list = Hobbies.objects.all()
     return HttpResponse(hobby_list)
 
 
 def portfolio(request):
+
     portfolio_list = Portfolios.objects.all()
     return HttpResponse(portfolio_list)
