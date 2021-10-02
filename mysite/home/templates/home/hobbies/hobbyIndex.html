@@ -1,0 +1,9 @@
+<h1>My Hobbies</h1>
+{% for hobby in hobby_list %}
+    <ul>
+        <li>
+            <a href="{% url 'hobbyDetail' hobby.id %}"> {{ hobby.id }}:  {{ hobby.hobby_name }} </a>
+        </li>
+    </ul>
+
+{% endfor %}

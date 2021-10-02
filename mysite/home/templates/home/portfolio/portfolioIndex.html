@@ -1,0 +1,9 @@
+<h1>My Portfolio</h1>
+{% for portfolio in portfolio_list %}
+    <ul>
+        <li>
+            <a href="{% url 'portfolioDetail' portfolio.id %}"> {{ portfolio.id }}:  {{ portfolio.portfolio_name }} </a>
+        </li>
+    </ul>
+
+{% endfor %}
