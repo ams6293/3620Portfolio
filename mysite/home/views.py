@@ -9,11 +9,12 @@ from django.template import loader
 
 
 def home(request):
-
-    return HttpResponse('About Me')
+    context = {}
+    return render(request, 'home/index.html', context)
 
 def contact(request):
-    return HttpResponse('<b>Amber Spatig:</b> amberspatig@mail.weber.edu')
+    context = {}
+    return render(request, 'home/contact.html', context)
 
 
 def hobbies(request):
