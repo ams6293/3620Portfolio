@@ -14,7 +14,8 @@
 <h1>My Portfolio</h1>
 {% for portfolio in portfolio_list %}
     <ul>
-        <li>
+        <li id="portfolioListItem">
+            <img class="card" height="150px" width="200px" src="{{ portfolio.portfolio_image }}"/>
             <a href="{% url 'portfolioDetail' portfolio.id %}"> {{ portfolio.id }}:  {{ portfolio.portfolio_name }} </a>
         </li>
     </ul>
