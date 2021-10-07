@@ -1,12 +1,43 @@
 body{
-    background-color: blue;
+   background-color: darkseagreen !important;
+
 }
 img{
+
     height: 150px;
     width: 200px;
 }
 
-#portfolioListItem{
-    font-color:purple;
+a{
+    color: blueviolet !important;
+}
+#myName{
+
+    color: purple;
+    font-size: 40px;
+}
+
+.centerBody{
+    text-align: center;
+}
+#homeHeader{
+    color: darkslateblue;
+    font-weight: bold;
+}
+h1{
+    font-family: "Book Antiqua";
+   padding-left: 2rem;
+    font-weight: bold;
+    color: indigo;
+}
+.centerImg{
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
 
 }
+h2{
+    font-family: Bahnschrift;
+    color: darkblue;
+}
+

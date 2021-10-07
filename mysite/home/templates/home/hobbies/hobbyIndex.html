@@ -13,16 +13,12 @@
 <h1>My Hobbies</h1>
 
 {% for hobby in hobby_list %}
-    <div class="row">
-    <div class="col-md-3">
-    <img class="card" height="150px" width="200px" src="{{ hobby.hobby_image }}"/>
-    </div>
-    <div class=" col-md-5">
-        <a href="{% url 'hobbyDetail' hobby.id %}"> <h3>{{ hobby.hobby_name }}</h3></a>
-    </div>
-    </div>
-
-
+    <ul>
+        <li id="hobbyListItem">
+            <img class="card" height="150px" width="200px" src="{{ hobby.hobby_image }}"/>
+            <a href="{% url 'hobbyDetail' hobby.id %}"> {{ hobby.id }}:  {{ hobby.hobby_name }} </a>
+        </li>
+    </ul>
 {% endfor %}
 {% endblock %}
 </body>

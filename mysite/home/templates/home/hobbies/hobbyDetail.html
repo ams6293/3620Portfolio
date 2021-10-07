@@ -11,9 +11,11 @@
 </head>
 <body>
 {% block body %}
+   <div class="centerBody">
 <h1>{{ hobby.hobby_name }}</h1>
-<img class="card" height="150px" src="{{ hobby.hobby_image }}"/>
+<img class="card centerImg" height="150px" src="{{ hobby.hobby_image }}"/>
 <h2>{{ hobby.hobby_desc }}</h2>
+   </div>
 {% endblock %}
 </body>
 </html>
