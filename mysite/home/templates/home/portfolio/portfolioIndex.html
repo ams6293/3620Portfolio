@@ -16,7 +16,8 @@
     <ul>
         <li id="portfolioListItem">
             <img class="card" height="150px" width="200px" src="{{ portfolio.portfolio_image }}"/>
-            <a href="{% url 'portfolioDetail' portfolio.id %}"> {{ portfolio.id }}:  {{ portfolio.portfolio_name }} </a>
+            <a href="{% url 'portfolioDetail' portfolio.id %}" class="btn btn-light"> {{ portfolio.id }}:  {{ portfolio.portfolio_name }} </a>
+            <a href="{% url 'update_portfolio' portfolio.id %}" class="btn btn-light">Edit</a>
         </li>
     </ul>
 
