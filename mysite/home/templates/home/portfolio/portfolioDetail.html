@@ -14,7 +14,7 @@
     <div class="centerBody">
 <h1>{{ portfolio.portfolio_name }}</h1>
 <h2>{{ portfolio.portfolio_desc }}</h2>
-     <a href="{% url 'delete_portfolio' portfolio.id %}">DELETE</a>
+     <a href="{% url 'port:delete_portfolio' portfolio.id %}">DELETE</a>
     </div>
 {% endblock %}
 </body>

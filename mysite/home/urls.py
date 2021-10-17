@@ -2,6 +2,7 @@
 from .import views
 from django.urls import path
 
+app_name = 'port'
 urlpatterns = [
     path('', views.home, name="home"),
     path('hobbies/<int:hobby_id>', views.hobbyDetail, name="hobbyDetail"),

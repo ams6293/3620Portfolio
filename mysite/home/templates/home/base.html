@@ -13,11 +13,17 @@
 <nav class="navbar navbar-dark bg-dark">
     <a href="../" class="navbar-brand">Amber Spatig</a>
     <div class="navbar">
-        <a class="nav-item nav-link" href="{% url 'contact'%}">Contact Me</a>
-        <a class="nav-item nav-link" href="{% url 'hobbies' %}">My Hobbies</a>
-        <a class="nav-item nav-link" href="{% url 'create_hobby' %}">Add Hobby</a>
-        <a class="nav-item nav-link" href="{% url 'portfolio' %}">My Portfolio</a>
-        <a class="nav-item nav-link" href="{% url 'create_portfolio' %}">Add Portfolio Item</a>
+        <a class="nav-item nav-link" href="{% url 'port:contact'%}">Contact Me</a>
+        <a class="nav-item nav-link" href="{% url 'port:hobbies' %}">My Hobbies</a>
+        <a class="nav-item nav-link" href="{% url 'port:create_hobby' %}">Add Hobby</a>
+        <a class="nav-item nav-link" href="{% url 'port:portfolio' %}">My Portfolio</a>
+        <a class="nav-item nav-link" href="{% url 'port:create_portfolio' %}">Add Portfolio Item</a>
+        {% if user.is_authenticated %}
+            <a class="nav-item nav-link" href="{% url 'profile' %}">Profile</a>
+            <a class="nav-item nav-link" href="{% url 'logout' %}">Logout</a>
+        {% else %}
+            <a class="nav-item nav-link" href="{% url 'login' %}">Login</a>
+        {% endif %}
     </div>
 
 </nav>
